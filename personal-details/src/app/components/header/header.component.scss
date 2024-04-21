@@ -1,0 +1,84 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+.header {
+  display: flex;
+  height: 4.5rem;
+  width: 100%;
+  background-color: #ffff;
+}
+.logo-container {
+  display: flex;
+  margin-left: 2.5rem;
+  margin-right: 3.5rem;
+  .logo {
+    width: 9rem;
+  }
+}
+.tabs {
+  display: flex;
+  height: 100%;
+}
+
+.tab {
+  font-family: HelveticaNowDisplay;
+  font-size: 0.875rem;
+  font-weight: 400;
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+  display: flex;
+  align-items: center;
+  border-bottom: 0.25rem solid transparent;
+  border-top: 0.25rem solid transparent;
+  cursor: pointer;
+}
+
+.tab-active {
+  border-bottom: 0.25rem solid #2f2c26;
+  font-weight: 1000;
+}
+
+.hamburger-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: 60px;
+  background-color: #f8f6f1;
+  padding-top: 8px;
+  height: calc(100vh - 60px);
+  ul {
+    list-style: none;
+    margin: 0;
+    width: 100vw;
+  }
+
+  li {
+    height: 4rem;
+    border-bottom: 1px solid rgb(169, 184, 195);
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.menu-close{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding:1rem;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .tabs {
+    display: none;
+  }
+  .menu-close{
+    display: flex;
+  }
+}

@@ -1,0 +1,132 @@
+.details {
+  width: 24.375rem;
+  margin: auto;
+  margin-top: 2.5rem;
+
+  h1 {
+    font-size: 2rem;
+    font-family: Canela;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.form-fields {
+  font-family: HelveticaNowDisplay;
+  font-weight: 400;
+  font-size: 0.875rem;
+  width: 100%;
+
+  background-color: #ffff;
+  padding: 0.625rem;
+
+  input[type="radio"] {
+    margin-right: 0.375rem;
+  }
+
+  input[type="radio"]:checked {
+    accent-color: #2f2c26;
+  }
+
+  .gender-fiels {
+    .genders {
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      input:nth-child(2) {
+        margin-left: 1rem;
+      }
+    }
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    input {
+      outline: none;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 0.25rem;
+      padding-top: 0.5rem;
+    }
+  }
+  .label:last-child {
+    margin-bottom: 2px;
+  }
+  .date-label {
+    input {
+      width: 4rem;
+      margin-right: 1.5rem;
+    }
+  }
+}
+.submit-btn {
+  width: 100%;
+  height: 3.188rem;
+  margin-top: 1.25rem;
+  background-color: #2f2c26;
+  color: #ffff;
+  font-family: HelveticaNowDisplay;
+  cursor: pointer;
+}
+
+.guarantee {
+  display: flex;
+  margin-top: 1.25rem;
+  font-family: HelveticaNowDisplay;
+  font-size: 0.875rem;
+  img {
+    margin-right: 0.5rem;
+  }
+  a {
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+.invalid {
+  color: red;
+  input[type="radio"] {
+    accent-color: red;
+  }
+}
+
+.popup-message {
+  background-color: #ff6348;
+  border-radius: 0.25rem;
+  box-shadow: 1px 2px 2px 0px #00000033;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  color: #ffff;
+  font-family: HelveticaNowDisplay;
+  width: 16.75rem;
+  height: 2.813rem;
+  position: absolute;
+  bottom: 3.75rem;
+  right: 2.5rem;
+  z-index: 1000;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    right: -100px;
+    opacity: 0;
+  }
+  to {
+    right: 2.5rem;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .details {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .popup-message {
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+    left: 0;
+  }
+}

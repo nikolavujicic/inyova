@@ -1,0 +1,39 @@
+{
+  "customers": [
+    {
+      "gender": "male",
+      "firstName": "Matteo",
+      "lastName": "Schmidt",
+      "dateOfBirth": { "day": 3, "month": 6, "year": 1999 },
+      "nationality": "German"
+    },
+    {
+      "gender": "female",
+      "firstName": "Emilia",
+      "lastName": "Bauer",
+      "dateOfBirth": { "day": 23, "month": 11, "year": 2000 },
+      "nationality": "German"
+    },
+    {
+      "gender": "male",
+      "firstName": "John",
+      "lastName": "Doe",
+      "dateOfBirth": { "day": 12, "month": 12, "year": 1989 },
+      "nationality": "English"
+    },
+    {
+      "gender": "female",
+      "firstName": "Catarina",
+      "lastName": "Fernandes",
+      "dateOfBirth": { "day": 12, "month": 11, "year": 1994 },
+      "nationality": "Portuguese"
+    },
+    {
+      "gender": "male",
+      "firstName": "Nikola",
+      "lastName": "Vujicic",
+      "dateOfBirth": { "day": 22, "month": 5, "year": 1989 },
+      "nationality": "Serbian"
+    }
+  ]
+}

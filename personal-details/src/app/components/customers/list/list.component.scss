@@ -1,0 +1,16 @@
+.list {
+  margin: 4rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40rem;
+  // min-width: 30rem;
+
+  td, th{
+    padding: 0px;
+    margin: auto;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+}

@@ -1,0 +1,11 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 30rem;
+  height: 100vh;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #f8f6f1;
+  position: relative;
+}

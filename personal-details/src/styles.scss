@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+@font-face {
+  src: url(assets/fonts/HelveticaNowDisplay-Regular.ttf);
+  font-family: HelveticaNowDisplay;
+}
+@font-face {
+  src: url(assets/fonts/Canela-Regular-Trial.otf);
+  font-family: Canela;
+}
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

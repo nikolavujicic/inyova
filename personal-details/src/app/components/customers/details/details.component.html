@@ -1,0 +1,119 @@
+<div class="details">
+  <form [formGroup]="personalDetailsForm" (ngSubmit)="onSubmit()">
+    <h1>Personal details</h1>
+    <div class="form-fields">
+      <div class="gender-fiels">
+        <label
+          [class.invalid]="
+            personalDetailsForm.get('gender')?.invalid && submitted
+          "
+          >Gender
+        </label>
+        <div class="genders">
+          <input
+            type="radio"
+            name="gender"
+            formControlName="gender"
+            value="male"
+            [class.invalid]="
+              personalDetailsForm.get('gender')?.invalid && submitted
+            "
+          />
+          Male
+          <input
+            type="radio"
+            name="gender"
+            formControlName="gender"
+            value="female"
+            [class.invalid]="
+              personalDetailsForm.get('gender')?.invalid && submitted
+            "
+          />
+          Female
+        </div>
+      </div>
+      <div class="name-label label">
+        <label
+          [class.invalid]="
+            personalDetailsForm.get('firstName')?.invalid && submitted
+          "
+          >First Name
+        </label>
+        <input
+          type="text"
+          formControlName="firstName"
+          placeholder="First name (as shown in passport / ID)"
+        />
+      </div>
+      <div class="name-label label">
+        <label
+          [class.invalid]="
+            personalDetailsForm.get('lastName')?.invalid && submitted
+          "
+          >Last Name
+        </label>
+        <input
+          type="text"
+          formControlName="lastName"
+          placeholder="Last name (as shown in passport / ID)"
+        />
+      </div>
+
+      <div class="date-label label" formGroupName="dateOfBirth">
+        <label
+          [class.invalid]="
+            personalDetailsForm.get('dateOfBirth')?.invalid && submitted
+          "
+          >Date of Birth</label
+        >
+        <div>
+          <input
+            type="number"
+            formControlName="day"
+            placeholder="Day"
+            min="1"
+            max="31"
+          />
+          <input
+            type="number"
+            formControlName="month"
+            placeholder="Month"
+            min="1"
+            max="12"
+          />
+          <input
+            type="number"
+            formControlName="year"
+            placeholder="Year"
+            min="1900"
+            max="2100"
+          />
+        </div>
+      </div>
+      <div class="name-label label">
+        <label
+          [class.invalid]="
+            personalDetailsForm.get('nationality')?.invalid && submitted
+          "
+          >Nationality
+        </label>
+        <input
+          type="text"
+          formControlName="nationality"
+          placeholder="Nationality"
+        />
+      </div>
+    </div>
+    <button type="submit" class="submit-btn">Continue</button>
+  </form>
+  <div class="guarantee">
+    <img src="assets/images/Shield.svg" />
+    <div>
+      <p>Inyova guarantees highest investmet standards.</p>
+      <a>Learn more.</a>
+    </div>
+  </div>
+  <div class="popup-message" *ngIf="showToastMessage">
+    Some fields are missing
+  </div>
+</div>
